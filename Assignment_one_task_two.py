@@ -2,7 +2,7 @@ post_data = [
 {
 "userId": "Alex Gates",
 "id": 1,
-"title": "sunt aut facere repellat provident",
+"title": "Sunt aut facere repellat provident",
 "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
 },
 {
@@ -33,7 +33,7 @@ post_data = [
 
 i = 0
 while i < len(post_data):
-    post_data[i]['slug'] = post_data[i]['title'].strip().replace(' ', '-')
+    post_data[i]['slug'] = post_data[i]['title'].strip().lower().replace(' ', '-')
     i = i + 1
 
 print(post_data)
